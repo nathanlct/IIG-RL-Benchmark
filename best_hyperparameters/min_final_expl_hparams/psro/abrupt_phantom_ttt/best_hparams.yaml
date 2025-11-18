@@ -1,0 +1,28 @@
+algorithm_name: psro
+ckpt_freq: 1
+hidden_layer_size: 512
+inner_rl_agent:
+  algorithm_name: dqn
+  batch_size: 64
+  discount_factor: 1.0
+  epsilon_decay_duration: 20000000
+  epsilon_end: 0.000125
+  epsilon_start: 0.015
+  learn_every: 10
+  learning_rate: 0.04
+  loss_str: mse
+  optimizer_str: adam
+  replay_buffer_capacity: 25000
+  update_target_network_every: 8000
+meta_strategy_method: nash
+n_hidden_layers: 3
+number_policies_selected: 1
+number_training_episodes: 2000
+optimizer_str: adam
+oracle_type: dqn
+rectifier: ''
+self_play_proportion: 0.0
+sigma: 0.0
+sims_per_entry: 125
+symmetric_game: false
+training_strategy_selector: probabilistic

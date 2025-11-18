@@ -1,0 +1,25 @@
+adam:
+  b1: 0.0
+  b2: 0.999
+  eps: 1.0e-07
+algorithm_name: rnad
+batch_size: 512
+c_vtrace: 4.0
+clip_gradient: 40000
+entropy_schedule_repeats:
+- 1
+entropy_schedule_size_value: 6250
+eta_reward_transform: 0.05
+finetune: None
+learning_rate: 0.0004
+nerd:
+  beta: 2.0
+  clip: 10000
+policy_network_layers:
+- 512
+- 512
+- 512
+seed: None
+state_representation: info_set
+target_network_avg: 0.000125
+trajectory_max: 100

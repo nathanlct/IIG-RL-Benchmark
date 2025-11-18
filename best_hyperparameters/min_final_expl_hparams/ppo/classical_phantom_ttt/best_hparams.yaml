@@ -1,0 +1,17 @@
+algorithm_name: ppo
+anneal_lr: true
+clip_coef: 0.1
+clip_vloss: true
+ent_coef: 0.05
+gae: true
+gae_lambda: 0.95
+gamma: 0.99
+learning_rate: 0.00025
+max_grad_norm: 0.5
+norm_adv: true
+num_envs: 8
+num_minibatches: 4
+num_steps: 128
+target_kl: null
+update_epochs: 4
+vf_coef: 0.5

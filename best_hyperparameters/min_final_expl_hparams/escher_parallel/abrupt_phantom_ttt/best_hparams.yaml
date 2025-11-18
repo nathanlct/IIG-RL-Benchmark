@@ -1,0 +1,28 @@
+algorithm_name: escher_parallel
+batch_size_regret: 16384
+batch_size_val: 16384
+expl: 1.0
+infer_device: cpu
+iters: 100000000
+learning_rate: 0.000125
+num_cpus: 8
+num_traversals: 4000
+num_val_fn_traversals: 500
+num_workers: 8
+policy_net_train_steps: 1250
+policy_network_layers:
+- 512
+- 512
+- 512
+regret_network_layers:
+- 512
+- 512
+- 512
+regret_train_steps: 40000
+train_device: cpu
+val_expl: 0.005
+val_train_steps: 40000
+value_network_layers:
+- 512
+- 512
+- 512

@@ -1,0 +1,1 @@
+This folder provides the top-performing hyperparameters for each game–algorithm pair from the sweep presented in [our paper](https://arxiv.org/abs/2502.08938), identified as those that reached the lowest exploitability after 10 million steps.

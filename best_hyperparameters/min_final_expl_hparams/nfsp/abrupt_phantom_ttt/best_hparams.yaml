@@ -1,0 +1,29 @@
+algorithm_name: nfsp
+anticipatory_param: 0.31622776601683794
+batch_size: 256
+hidden_layers_sizes:
+- 512
+- 512
+- 512
+inner_rl_agent:
+  algorithm_name: dqn
+  batch_size: 64
+  discount_factor: 1.0
+  epsilon_decay_duration: 5000000
+  epsilon_end: 0.004
+  epsilon_start: 0.12
+  learn_every: 10
+  learning_rate: 0.00125
+  loss_str: mse
+  optimizer_str: adam
+  replay_buffer_capacity: 100000
+  update_target_network_every: 500
+learn_every: 256
+loss_str: mse
+max_steps: None
+min_buffer_size_to_learn: 125
+optimizer_str: adam
+reservoir_buffer_capacity: 2000000
+results_path: ''
+rl_learning_rate: 0.01
+sl_learning_rate: 0.0025
